@@ -476,10 +476,10 @@ def onmessage(update,bot:ObigramClient):
         thread.store('msg',message)
 
         if '/start' in msgText:
-            start_msg = 'Bot          : @UploadFreBot\n'
+            start_msg = 'Bot : @UploadFreBot\n'
             start_msg+= 'Desarrollador: @SokyShop\n'
-            start_msg+=           : Enlaces que soporta Archivos en Mega Google Drive YouTube Enlaces de descarga directa\n'
-            start_msg+= 'Uso          : Envia Enlaces De Descarga y Archivos Para Procesar (Configure Antes De Empezar , Vea El /tutorial)\n'
+            start_msg+= 'Api: Enlaces que soporta Archivos en Mega Google Drive YouTube Enlaces de descarga directa\n'
+            start_msg+= 'Uso: Envia Enlaces De Descarga y Archivos Para Procesar (Configure Antes De Empezar , Vea El /tutorial)\n'
             bot.editMessageText(message,start_msg)
         elif '/files' == msgText and user_info['cloudtype']=='moodle':
              proxy = ProxyCloud.parse(user_info['proxy'])
