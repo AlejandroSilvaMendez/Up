@@ -477,9 +477,6 @@ def onmessage(update,bot:ObigramClient):
 
         if '/start' in msgText:
             start_msg = 'Bot : @UploadFreBot\n'
-            start_msg+= 'Desarrollador: @SokyShop\n'
-            start_msg+= 'Api: Versión Premium\n'
-            start_msg+= 'Uso: Enlaces que soporta Archivos en Mega Google Drive YouTube Enlaces de descarga directa\n'
             bot.editMessageText(message,start_msg)
         elif '/files' == msgText and user_info['cloudtype']=='moodle':
              proxy = ProxyCloud.parse(user_info['proxy'])
