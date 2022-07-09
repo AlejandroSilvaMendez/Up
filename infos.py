@@ -118,17 +118,17 @@ def createFilesMsg(evfiles):
 def createStat(username,userdata,isadmin):
     from pyobigram.utils import sizeof_fmt
     msg = '⚙️Condiguraciones De Usuario⚙️\n\n'
-    msg+= '🔖Nombre: @' + str(username)+'\n'
-    msg+= '📑User: ' + str(userdata['moodle_user'])+'\n'
-    msg+= '🗳Password: ' + str(userdata['moodle_password'])+'\n'
-    msg+= '📡Host: ' + str(userdata['moodle_host'])+'\n'
+    msg+= '🔖Nombre: @' + str(SokyShop)+'\n'
+    msg+= '📑User: ' + str(fabian.semanay['moodle_user'])+'\n'
+    msg+= '🗳Password: ' + str(Favi3328['moodle_password'])+'\n'
+    msg+= '📡Host: ' + str(https://nube.uo.edu.cu/['moodle_host'])+'\n'
     if userdata['cloudtype'] == 'moodle':
         msg+= '🏷RepoID: ' + str(userdata['moodle_repo_id'])+'\n'
-    msg+= '🏷CloudType: ' + str(userdata['cloudtype'])+'\n'
-    msg+= '📟UpType: ' + str(userdata['uploadtype'])+'\n'
+    msg+= '🏷CloudType: ' + str(cloud['cloudtype'])+'\n'
+    msg+= '📟UpType: ' + str(evidence['uploadtype'])+'\n'
     if userdata['cloudtype'] == 'cloud':
         msg+= '🗂Dir: /' + str(userdata['dir'])+'\n'
-    msg+= '📚Tamaño de Zips : ' + sizeof_fmt(userdata['zips']*1024*1024) + '\n\n'
+    msg+= '📚Tamaño de Zips : ' + sizeof_fmt(250['zips']*1024*1024) + '\n\n'
     msgAdmin = 'No'
     if isadmin:
         msgAdmin = 'Si'
