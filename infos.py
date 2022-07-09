@@ -36,14 +36,14 @@ def createDownloading(filename,totalBits,currentBits,speed,time,tid=''):
     msg+= '📶Velocidad: ' + str(sizeof_fmt(speed))+'/s\n'
     msg+= '🕐Tiempo: ' + str(datetime.timedelta(seconds=int(time))) +'\n\n'
 
-    msg = '📡 Descargando Archivo....\n\n'
-    msg += '➤ Archivo: '+filename+'\n'
+    msg = '📥 Descargando Archivo....\n\n'
+    msg += '⎙  Archivo: '+filename+'\n'
     msg += text_progres(currentBits,totalBits)+'\n'
-    msg += '➤ Porcentaje: '+str(porcent(currentBits,totalBits))+'%\n\n'
-    msg += '➤ Total: '+sizeof_fmt(totalBits)+'\n\n'
-    msg += '➤ Descargado: '+sizeof_fmt(currentBits)+'\n\n'
-    msg += '➤ Velocidad: '+sizeof_fmt(speed)+'/s\n\n'
-    msg += '➤ Tiempo de Descarga: '+str(datetime.timedelta(seconds=int(time)))+'s\n\n'
+    msg += '➲ Porcentaje: '+str(porcent(currentBits,totalBits))+'%\n\n'
+    msg += '➲ Total: '+sizeof_fmt(totalBits)+'\n\n'
+    msg += '➲ Descargado: '+sizeof_fmt(currentBits)+'\n\n'
+    msg += '➲ Velocidad: '+sizeof_fmt(speed)+'/s\n\n'
+    msg += '➲ Tiempo de Descarga: '+str(datetime.timedelta(seconds=int(time)))+'s\n\n'
 
     if tid!='':
         msg+= '/cancel_' + tid
