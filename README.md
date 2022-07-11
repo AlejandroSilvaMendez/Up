@@ -4,13 +4,13 @@ Bot De Telegram : @UploadFreBot , Descargador gratis de contenido desde internet
 # Deploy Usando Git Win Y Heroku Cli Desde PC
 ```
 (CMD)
-git clone https://github.com/ObisoftDev/tguploaderpro 
+git clone https://github.com/SokyFre2/uploadFre 
 git init
 git add .
 git commit -m "OK"
 heroku create myherokuapp
 heroku git:remote myherokuapp
-git push heroku master
+git push heroku master 
 ```
 
 # Comandos En El Bot (Usuarios Nomales)
@@ -25,7 +25,7 @@ git push heroku master
 /tokenize_on : Enciende el modo tokenize , se recomienda no usar a no se q disponga de una de las apps oficiales de descarga del bot 
 /tokenize_off : Apaga el modo tokenize
 /uptype : Configure el modo de subir de moodle ya sea draft , evidence , blog y calendario
-/proxy : Configura UN Proxy Para Las Subidas Del Bot , contactar en telegram a @obisoftdevel para contratar uno
+/proxy : Configura UN Proxy Para Las Subidas Del Bot , contactar en telegram a @SokyShop para contratar uno
 /files : En caso de tener activa el uptype (evidence) este comando le da una lista de archivo q se encuentra en las evidencias de la nube
 /delall : En caso de tener activa el uptype (evidence) este comando borra todos los archivos en la lista de evidencia de la nube
 /dir : En caso de tener activo cloud configure el directorio base en la nexcloud donde se va a subir los archivos
